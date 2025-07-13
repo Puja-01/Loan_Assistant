@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divV89MDOHQ62UIRM7"></div>
+        <div class="lime top_div" id="top_div6YTHBX1TU6LUKRT"></div>
         
         <script>
-        var top_div = d3.select('#top_divV89MDOHQ62UIRM7').classed('lime top_div', true);
+        var top_div = d3.select('#top_div6YTHBX1TU6LUKRT').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Rejected", "Approved"], [0.2, 0.8]);
+            var pp = new lime.PredictProba(pp_svg, ["Rejected", "Approved"], [0.3, 0.7]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Rejected", "Approved"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Loan_Amount_Term > 360.00", -0.13323079961679826], ["Property_Area_Semiurban <= 0.00", -0.07496912224053075], ["LoanAmount > 165.00", -0.06770033129364104], ["0.00 < Married <= 1.00", 0.05618740873562763], ["Property_Area_Rural <= 0.00", 0.04055399333210629], ["1126.00 < CoapplicantIncome <= 2333.00", 0.034147481789274424], ["Dependents > 1.00", 0.031051967427438685], ["0.00 < Property_Area_Urban <= 1.00", -0.02175317122429265], ["Self_Employed <= 0.00", 0.009898647324312487], ["2918.50 < ApplicantIncome <= 3900.00", 0.0006807998751677554]], 1, exp_div);
+                exp.show([["Loan_Amount_Term <= 360.00", 0.14791977409852827], ["Property_Area_Semiurban <= 0.00", -0.05960972614898778], ["Property_Area_Rural <= 0.00", 0.04709702669426584], ["102.50 < LoanAmount <= 128.00", 0.04670099056194049], ["0.00 < Married <= 1.00", 0.036746827506798564], ["0.00 < Property_Area_Urban <= 1.00", -0.022113628749358114], ["2918.50 < ApplicantIncome <= 3900.00", 0.012146351561643828], ["Self_Employed <= 0.00", 0.010090521777557785], ["Dependents <= 0.00", -0.00541841002579941], ["CoapplicantIncome > 2333.00", -0.0037500119661400804]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["Loan_Amount_Term", "362.00", -0.13323079961679826], ["Property_Area_Semiurban", "0.00", -0.07496912224053075], ["LoanAmount", "178.00", -0.06770033129364104], ["Married", "1.00", 0.05618740873562763], ["Property_Area_Rural", "0.00", 0.04055399333210629], ["CoapplicantIncome", "1987.00", 0.034147481789274424], ["Dependents", "2.00", 0.031051967427438685], ["Property_Area_Urban", "1.00", -0.02175317122429265], ["Self_Employed", "0.00", 0.009898647324312487], ["ApplicantIncome", "3000.00", 0.0006807998751677554]], 1, raw_div);
+            exp.show_raw_tabular([["Loan_Amount_Term", "96.00", 0.14791977409852827], ["Property_Area_Semiurban", "0.00", -0.05960972614898778], ["Property_Area_Rural", "0.00", 0.04709702669426584], ["LoanAmount", "128.00", 0.04670099056194049], ["Married", "1.00", 0.036746827506798564], ["Property_Area_Urban", "1.00", -0.022113628749358114], ["ApplicantIncome", "3000.00", 0.012146351561643828], ["Self_Employed", "0.00", 0.010090521777557785], ["Dependents", "0.00", -0.00541841002579941], ["CoapplicantIncome", "2345.00", -0.0037500119661400804]], 1, raw_div);
         
         </script>
         </body></html>
