@@ -7,7 +7,7 @@ An AI-powered Streamlit application that predicts loan approval based on user-pr
 
 ## 🚀 Features
 
-- 🤖 **Loan Chatbot Assistant** – Explains loan results using user profile + document knowledge base.
+- 🤖 **Loan Chatbot Assistant** – Explains loan results using user profile + document knowledge base. 
 - 📈 **Prediction Model** – Based on trained loan approval dataset and classifier (supports LIME explanations).
 - 🧠 **Feature Importance Insights** – Visual aid showing key factors affecting decisions.
 - 🧾 **Interactive Two-Column Input UI** – Sleek design to collect user data (income, employment, property, etc.).
